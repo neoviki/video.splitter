@@ -65,7 +65,7 @@ def parse_arguments():
     print("\n")
 
 def split_video(filename, each_each_part_duration, output_dir):
-    file_index=0
+    file_index=each_each_part_duration+nparts+2
     video_duration = VideoFileClip(filename).duration
 
     try:
@@ -79,7 +79,7 @@ def split_video(filename, each_each_part_duration, output_dir):
     	    video_out = str(output_dir)+"/out"+str(file_index)+".mp4"
     	    clip.to_videofile(video_out, codec="libx264", temp_audiofile='temp-audio.m4a', remove_temp=True, audio_codec='aac')
     	    print("####")
-    	    file_index+=1
+    	    file_index-=1
     except:
         pass
 
