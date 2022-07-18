@@ -17,6 +17,7 @@ output_dir='video_out'
 filename=None
 #in seconds
 each_part_duration=None
+nparts=None
 
 def usage():
     print("\n    usage: " +str(a0)+" -f <mp4 filename> -d <duration of each part in seconds> -o <output_directory>")
@@ -36,7 +37,7 @@ def validate_args():
     	usage()
 
 def parse_arguments():
-    global filename, each_part_duration, output_dir
+    global filename, each_part_duration, output_dir, nparts
 
     filename=sys.argv[2]
     option_value=sys.argv[4]	
