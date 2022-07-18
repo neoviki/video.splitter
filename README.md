@@ -9,6 +9,6 @@ An utility to split videos in to multiple parts
 
 ## Usage
 
-   ./splitvid -f <mp4 file name> -d <duration of each part> -o <output directory>
+   ./splitvid -f '<mp4 file name>' -d '<duration of each part>' -o '<output directory>'
 
 
