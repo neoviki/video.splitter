@@ -2,10 +2,10 @@
 
 Video Splitter Utility
 
-	Author	: Viki (@) Vignesh Natarajan 
+	Author	: Viki (@) V Natarajan
 	Licence	: MIT
 	Year    : July, 2022
-	Contact : neoviki.com
+	Contact : viki.design
 
 '''
 
@@ -24,7 +24,7 @@ def usage():
     print("\n    usage: " +str(a0)+" -f <mp4 filename> -c <number of parts to split> -o <output_directory>\n")
     exit(0)
 
-def validate_args():	
+def validate_args():
     if sys.argv[1] != '-f':
     	print("error: missing filename\n")
     	usage()
@@ -40,7 +40,7 @@ def parse_arguments():
     global filename, each_part_duration, output_dir, nparts
 
     filename=sys.argv[2]
-    option_value=sys.argv[4]	
+    option_value=sys.argv[4]
     #duration in seconds
     video_duration = VideoFileClip(filename).duration
 
